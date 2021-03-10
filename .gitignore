@@ -14,9 +14,9 @@
 # /public
 # /styles/globals.css
 
-package-lock.json
-package.json
-README.md
+# package-lock.json
+# package.json
+# README.md
 
 # next.js
 /.next/
