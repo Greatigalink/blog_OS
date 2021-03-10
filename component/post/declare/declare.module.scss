@@ -1,0 +1,18 @@
+.post_more {
+  padding: 20px;
+  transition: all 0.8s;
+  border-radius: 20px;
+  border-left: 2px solid #ef5350;
+  border-right: 2px solid #ef5350;
+  p {
+    padding: 0 8px 0 8px;
+    font-size: 14px;
+    color: #ef6c00;
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+}
+
+.post_more:hover {
+  box-shadow: 5px 5px 10px #bdbdbd;
+}

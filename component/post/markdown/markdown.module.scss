@@ -1,0 +1,51 @@
+.markdown {
+  padding: 1%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  h1 {
+    font-size: 32px;
+    color: #455a64;
+  }
+  h2 {
+    font-size: 23px;
+    color: #455a64;
+  }
+  h3 {
+    font-size: 15px;
+    color: #455a64;
+  }
+  h1, h2 {
+    padding: 8px 0 8px 0;
+  }
+  h3, h4 {
+    padding: 6px 0 6px 0;
+  }
+  p {
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+  ul {
+    font-size: 14px;
+    color: #8d6e63;
+    list-style: circle;
+  }
+  pre {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  blockquote {
+    padding: 1px;
+    margin: 8px 0 8px 0;
+    border-left: 5px #757575 solid;
+    font-size: 14px;
+    p {
+      margin: 3px 0 3px 10px;
+    }
+    color: #757575;
+  }
+  ol, ul {
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,32 @@
+.buildHistory {
+  background: url(https://s3.ax1x.com/2021/02/08/yU9On1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+}
+
+.buildHistory_cover {
+  background: rgba($color: #212121, $alpha: 0.1);
+  padding: 1px;
+  main {
+    margin: 100px 18% 50px 18%;
+  }
+  ul {
+    margin: 0;
+    padding: 1px;
+    list-style: none;
+    li {
+      margin: 70px 0 150px 0;
+    }
+  }
+  ul:after {
+    content:'';
+    display:block;
+    clear:both;
+  }
+  @media screen and (max-width: 1024px) {
+    main {
+      margin: 100px 6% 50px 6%;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    li {
+      margin: 0 10px 0 10px;
+      padding: 3px;
+      font-size: 14px;
+      border-radius: 50%;
+      transition: all 0.5s;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    li:hover {
+      background-color: #fb8c00;
+      color: white;
+    }
+  }
+  aside {
+    border-radius: 50%;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  aside:hover {
+    background-color: #ffa726;
+  }
+}

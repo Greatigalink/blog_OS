@@ -1,0 +1,91 @@
+.post {
+  font-family: "AqumCap";
+}
+
+.post_head {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  color: white;
+  footer {
+    position: absolute;
+    bottom: 3%;
+    left: 2%;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.post_head_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba($color: #000000, $alpha: 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+  section {
+    display: flex;
+  }
+}
+
+.post_main {
+  padding: 20px 0 20px 0;
+  min-height: 600px;
+  display: flex;
+  aside[title="post_ad"] {
+    margin-right: 3%;
+    flex: 0.3;
+    //border: 1px #bcbcbc solid;
+  }
+  section {
+    flex: 0.3;
+    //border: 1px red solid;
+  }
+  article {
+    flex: 1;
+    h2[title="thinks"]{
+      text-align: center;
+      color: #26c6da;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .post_main {
+    section {
+      display: none;
+    }
+    aside[title="post_ad"] {
+      width: 40%;
+    }
+    article {
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .post_main {
+    section {
+      display: none;
+    }
+    aside[title="post_ad"] {
+      display: none;
+    }
+    article {
+      width: 100%;
+      padding: 0 5% 0 5%;
+    }
+  }
+}

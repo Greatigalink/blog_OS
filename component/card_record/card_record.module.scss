@@ -1,0 +1,47 @@
+.card_record {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.card_record_head {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 35%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.card_record_main {
+  padding: 20px 25px 20px 25px;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0px;
+      line-height: 20px;
+    }
+  }
+  p[title="build介绍"] {
+    padding: 0 5px 0 5px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  @media screen and (max-width: 960px) {
+    ul {
+      li {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+}

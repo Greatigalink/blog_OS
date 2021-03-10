@@ -1,0 +1,36 @@
+.about{
+  background: url(https://s3.ax1x.com/2021/02/03/yln2VK.jpg);
+  background-size: cover;
+  font-family: "AqumCap";
+  background-attachment: fixed;
+}
+
+.about_cover {
+  background: rgba($color: #000000, $alpha: 0.3);
+}
+
+.about_main {
+  margin: 0 7% 0 35%;
+  background-color: white;
+  padding: 60px 5px 5px 5px;
+  min-height: 800px;
+  h3 {
+    margin: 50px 0 25px 0;
+    color: #33691e;
+  }
+  p {
+    letter-spacing: 1px;
+  }
+  ul {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .about_cover {
+    padding-bottom: 20px;
+  }
+  .about_main {
+    margin: 50px 7% 0px 7%;
+  }
+}

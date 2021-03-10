@@ -1,0 +1,38 @@
+.icon_href {
+  :hover {
+    main {
+      border-radius: 10px;
+      background-color: #e53935;
+      color: white;
+    }  
+  }
+}
+
+.icon {
+  margin: 5px;
+  main {
+    margin: 0 3px 0 3px;
+    padding: 0 3px 0px 3px;
+    transition: all 0.8s;
+  }
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+}
