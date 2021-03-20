@@ -1,4 +1,4 @@
-import style from "./buildHistory.module.scss";
+import style from "./build-history.module.scss";
 import { getTestBuildHistory, dayOrNight } from "../../../api/export";
 import { useSelector } from "react-redux"
 import dynamic from "next/dynamic"

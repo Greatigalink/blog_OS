@@ -29,7 +29,7 @@ const navLists = [
     ]
   },
   {
-    name: "更多",
+    name: "更多文章",
     children: [
       {
         name: "影视",
@@ -50,12 +50,21 @@ const navLists = [
     children: [
       {
         name: "回忆录",
-        href: "/record/buildHistory"
+        href: "/record/build-history"
       },
       // {
       //   name: "点滴",
       //   href: "/record/diary"
       // }
+    ]
+  },
+  {
+    name: "功能体验",
+    children: [
+      {
+        name: "你的余生",
+        href: "/function/your-life"
+      },
     ]
   },
   {
