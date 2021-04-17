@@ -15,7 +15,8 @@ const navListMoreStyle = {
 const nowNavStyle = function (href, nowNav) {
   if (href == nowNav) {
     return {
-      color: "#00bcd4"
+      color: "#00bcd4",
+      fontWeight: 'bold'
     }
   } else {
     return {}

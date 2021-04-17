@@ -9,9 +9,9 @@ const classify = [
       "C语言是编程他爹啊",
     ],
     "class_img|1": [
-      "https://s3.ax1x.com/2021/02/08/yUiqXj.jpg",
-      "https://s3.ax1x.com/2021/02/08/yU9On1.jpg",
-      "https://s3.ax1x.com/2021/02/08/yUPnVx.jpg",
+      "https://z3.ax1x.com/2021/04/17/c5854J.jpg",
+      "https://z3.ax1x.com/2021/04/17/c58aB8.jpg",
+      "https://z3.ax1x.com/2021/02/18/yWnrtJ.jpg",
     ],
     "art_classify|1": ["TD1", "SD1", "SD2"],
   },
