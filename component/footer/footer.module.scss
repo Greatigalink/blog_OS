@@ -8,6 +8,7 @@
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   box-shadow: 5px 0 10px #bdbdbd;
   article {
+    flex: 1;
     text-align: center;
     p {
       line-height: 10px;
@@ -20,8 +21,9 @@
     }
   }
   footer {
+    flex: 1;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     aside {
       cursor: pointer;
