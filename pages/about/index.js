@@ -16,7 +16,7 @@ const author = [
   {
     title: "Technical Support",
     content:
-      "目前版本主要由<:Next.js|https://www.nextjs.cn/:>驱动，之前的版本也使用过其他技术，感兴趣可以去<:建站历史|http://localhost:3000/record/buildHistory:>查看",
+      "目前版本主要由<:Next.js|https://www.nextjs.cn/:>驱动，之前的版本也使用过其他技术，感兴趣可以去<:建站历史|http://localhost:3000/record/build-history:>查看",
   },
   {
     title: "Developer",
