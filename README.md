@@ -25,6 +25,4 @@ npm start
 
 ### CICD-test
 
-* one
-* two
-* three
+* 通过脚本触发
