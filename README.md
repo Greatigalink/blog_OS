@@ -27,8 +27,4 @@ npm start
 
 * 通过脚本触发
 * 貌似执行不了 git 命令
-* 再次尝试
-* again
-* again
-* again
-* again
+* 应该是可以了
