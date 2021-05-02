@@ -20,3 +20,9 @@ npm start
 > **如果有小伙伴感兴趣可以一起开发呀~**
 
 > 联系邮箱 greatiga@126.com
+
+## Other
+
+### CICD-test
+
+* one
