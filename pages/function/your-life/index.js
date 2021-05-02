@@ -13,7 +13,8 @@ const getStore = function() {
 export default function YourLife() {
   const { clock } = getStore();
   return(
-    <div style={style.your_life}>
+    <div className={style.your_life}>
+      <main className={style.your_life_main}></main>
       <Footer clock={clock} />
       <Nav nowNav={'/function/your-life'} />
       <BackTop />

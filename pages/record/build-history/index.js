@@ -44,7 +44,7 @@ export default function BuildHistory({ buildHistory_list }) {
         </main>
         <Footer clock={clock} />
       </div>
-      <Nav nowNav={"/record/buildHistory"} />
+      <Nav nowNav={"/record/build-history"} />
       <BackTop />
     </div>
   );
