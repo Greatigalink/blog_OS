@@ -27,3 +27,7 @@ npm start
 
 * 通过webhook触发
 * bash脚本进行自动部署
+
+### 队列处理
+
+* 1
