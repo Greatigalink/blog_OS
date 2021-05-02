@@ -25,4 +25,5 @@ npm start
 
 ### CICD-test
 
-* 通过脚本触发
+* 通过webhook触发
+* bash脚本进行自动部署
