@@ -26,5 +26,4 @@ npm start
 ### CICD-test
 
 * 通过脚本触发
-* 貌似执行不了 git 命令
-* 应该是可以了吧
+* 试试 develop 的测试分支 
