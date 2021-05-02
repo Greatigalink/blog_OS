@@ -26,4 +26,5 @@ npm start
 ### CICD-test
 
 * 通过脚本触发
-* 试试 develop 的测试分支 
+* 试试 develop 的测试分支
+* 试试两个一起
