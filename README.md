@@ -26,3 +26,4 @@ npm start
 ### CICD-test
 
 * 通过脚本触发
+* 貌似执行不了 git 命令
