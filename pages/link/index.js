@@ -41,7 +41,6 @@ export async function getServerSideProps(context) {
 }
 
 export default function Link({ linkLists }) {
-  //console.log(linkLists);
   const { clock } = getStore();
   return (
     <div className={style.link}>
