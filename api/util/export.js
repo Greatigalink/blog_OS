@@ -1,7 +1,7 @@
 import { Type } from "./type"
 import { cutWord } from "./cutWord"
 import Scroll from "../util/scroll";
-import Thorttle from "./thorttle";
+import { Thorttle, ThorttleAnimation, Stabilization } from "./thorttle";
 import TextLink from "./textLink";
 import { dayOrNight } from "./changeStyle"
 import Time from "./time"
@@ -21,6 +21,8 @@ export {
   cutWord,
   Scroll,
   Thorttle,
+  ThorttleAnimation,
+  Stabilization,
   TextLink,
   dayOrNight,
   Time
