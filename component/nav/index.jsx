@@ -96,7 +96,7 @@ const isPcOrMobile = function (docWidth) {
 
 const moveNavStyle = function (nowTop, type) {
   let className = "nav_none";
-  if (nowTop == 0 && type == null) {
+  if (nowTop <= 10 && type == null) {
     className = "nav_on_top";
   } else {
     className = "nav_on_move";

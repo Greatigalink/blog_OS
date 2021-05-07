@@ -26,7 +26,7 @@ let oldTop = 0;
 
 //改变目录样式，确保只在内容区出现
 const changeStyle = function(top) {
-  if(top < 230 || top > catalogSection[catalogSection.length - 1]) {
+  if(top < 370 || top > catalogSection[catalogSection.length - 1]) {
     return 0;
   } else {
     return 1;

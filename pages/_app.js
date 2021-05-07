@@ -3,7 +3,7 @@ import { useEffect } from "react"
 import { Provider } from "react-redux"
 import { useStore } from "../store/index"
 import { setTop, setClock, setDocWidth } from "../store/action"
-import { Thorttle } from "../api/export"
+import { Thorttle, Stabilization } from "../api/export"
 
 const listenerTop = function(dispatch) {
   let top = document.body.scrollTop || document.documentElement.scrollTop;
@@ -23,7 +23,8 @@ function MyApp({ Component, pageProps }) {
     store.dispatch(setTop(top));
     store.dispatch(setDocWidth(width));
     store.dispatch(setClock(localStorage.getItem("clock") || "daytime"));
-    window.addEventListener('scroll', Thorttle(500, listenerTop, store.dispatch));
+    window.addEventListener('scroll', Thorttle(300, listenerTop, store.dispatch));
+    window.addEventListener('scroll', Stabilization(300, listenerTop, store.dispatch));
     window.addEventListener('resize', Thorttle(500, listenerWidth, store.dispatch));
   })
 

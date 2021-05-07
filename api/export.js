@@ -9,7 +9,7 @@ import {
   getTestBuildHistory,
   getTestLinkLists
 } from "./request/export";
-import { Type, cutWord, Scroll, Thorttle, TextLink, dayOrNight, Time } from "./util/export";
+import { Type, cutWord, Scroll, Thorttle, ThorttleAnimation, Stabilization, TextLink, dayOrNight, Time } from "./util/export";
 
 export {
   getOneArticle,
@@ -27,6 +27,8 @@ export {
   cutWord,
   Scroll,
   Thorttle,
+  ThorttleAnimation,
+  Stabilization,
   TextLink,
   dayOrNight,
   Time
