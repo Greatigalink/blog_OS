@@ -1,5 +1,5 @@
 import style from "./list.module.scss"
-import { Icon } from "../../export"
+import { Icon } from "../../../component/export"
 import { cutWord } from "../../../api/export"
 
 export default function List({ list }) {

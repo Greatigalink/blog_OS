@@ -13,8 +13,9 @@ import dynamic from "next/dynamic";
 const Nav = dynamic(() => import("../../component/nav/index"));
 const BackTop = dynamic(() => import("../../component/back_top/index"));
 const Footer = dynamic(() => import("../../component/footer/index"));
-const List = dynamic(() => import("../../component/classify/list/index"));
 const Pagination = dynamic(() => import("../../component/pagination/index"));
+
+const List = dynamic(() => import("../../page-component/classify/list/index"));
 
 const noClassify = {
   art_classify: "NO1",

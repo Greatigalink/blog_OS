@@ -1,5 +1,4 @@
 import { CataLog, Declare, MarkDown } from "./post/export";
-import { List } from "./classify/export"
 import Icon from "./icon/index";
 import BackTop from "./back_top/index";
 import Nav from "./nav/index"
@@ -17,7 +16,6 @@ export {
   Icon,
   BackTop,
   Nav,
-  List,
   Pagination,
   BinaryLable,
   CardRecord,
