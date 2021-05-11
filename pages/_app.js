@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }) {
     window.addEventListener('scroll', Thorttle(300, listenerTop, store.dispatch));
     window.addEventListener('scroll', Stabilization(300, listenerTop, store.dispatch));
     window.addEventListener('resize', Thorttle(500, listenerWidth, store.dispatch));
-  })
+  }, [])
 
   return <Provider store={store}><Component {...pageProps} /></Provider> 
 }

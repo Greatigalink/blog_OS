@@ -29,8 +29,8 @@ const getStore = () =>
     clock: state.basicState.clock,
   }));
 
-const aHref = function (herf) {
-  window.location.href = `/post/${herf}`;
+const aHref = function (href) {
+  window.location.href = `/post/${href}`;
 };
 
 const clickPage = function (nowPage, classifyList, setDisplayList) {
@@ -41,9 +41,9 @@ const clickPage = function (nowPage, classifyList, setDisplayList) {
 
 export async function getServerSideProps(context) {
   let art_classify = context.query.art_classify;
+  console.log(context.query)
   let classify = await getTestClassify([1]);
   let classifyList = await getTestClassifyList([20, 100]);
-
   return {
     props: {
       art_classify,
@@ -55,17 +55,13 @@ export async function getServerSideProps(context) {
 
 export default function Classify({ art_classify, classify, classifyList }) {
   let total = classifyList.length || 1;
-  let [displayList, setDisplayList] = useState(classifyList.slice(0, 9));
+  let [ displayList, setDisplayList ] = useState(classifyList.slice(0, 9));
   let { clock } = getStore();
 
   return (
     <div className={style.classify}>
-      <header
-        style={{
-          background: `url(${classify.class_img})`,
-          backgroundSize: "cover",
-        }}
-      >
+      <header>
+        <img src={classify.class_img}/>
         <div className={style.classify_cover}>
           <h1>{classify.class_name}</h1>
           <p>{classify.class_intro || "一个没有简介的分类"}</p>

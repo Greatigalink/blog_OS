@@ -14,7 +14,7 @@ export default function MarkDown({content, clock}) {
         console.log(error);
       }
     });
-  })
+  }, [])
 
   return(
     <div className={styles.markdown} style={dayOrNight("markdown", clock)}>

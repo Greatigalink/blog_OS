@@ -48,9 +48,8 @@ export async function getServerSideProps(context) {
   let art_id = context.query.art_id;
   let article = await getOneTestArticle([1]);
   //let article = await getOneArticle(art_id);
-  article = Type(article) == "object" ? article : noArticle;
-
-  let content = await mdToHtml(article.art_content);
+  article = Type(article) === "object" ? article : noArticle;
+  let content = await mdToHtml(article.art_content || noArticle.art_content);
   return {
     props: {
       art_id,
@@ -61,26 +60,21 @@ export async function getServerSideProps(context) {
 }
 
 export default function Post({art_id, article, content }) {
-  const [ad, setAd] = useState([]);
+  const [ ad, setAd ] = useState([]);
   const { clock } = getStore();
   const [ catalogSection, setcatalogSection ] = useState([]);
-  const headBack = {
-    background: `url(${article.art_img})`,
-    backgroundSize: "cover"
-  };
 
   useEffect(() => {
     let doc = document.querySelector("#markdown");
     let { result, scroll_obj } = createAD(doc);
-    if (ad.length == 0) {
-      setAd([...result]);
-      setcatalogSection([...scroll_obj]);
-    }
-  });
+    setAd([...result]);
+    setcatalogSection([...scroll_obj]);
+  }, []);
 
   return (
     <div className={style.post}>
-      <header className={style.post_head} style={headBack}>
+      <header className={style.post_head}>
+        <img src={article.art_img}/>
         <div className={style.post_head_text}>
           <h1>{article.art_title}</h1>
           <Icon
@@ -88,7 +82,7 @@ export default function Post({art_id, article, content }) {
             location={"right"}
             text={article.user_name}
             size={17}
-            href={`/user/${article.art_user_id}`}
+            href={`/user/${article.art_user_id || '0000'}`}
             color={"#80deea"}
           ></Icon>
           <br></br>

@@ -3,7 +3,7 @@ import { getMockData } from "../../mock/index"
 
 const defaultUrl = "http://localhost:3001";
 
-const getOneArticle = (data) => FetchAPI(`${defaultUrl}`, {
+const getOneArticle = (data) => FetchAPI(`${defaultUrl}/get-article`, {
   art_id: data
 });
 
