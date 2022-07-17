@@ -33,6 +33,6 @@ npm start
 * 本仓库是项目的开源代码，只是作为展示，并非线上运行的代码
 * 同步会慢于线上代码
 
-## [License](https://)
+## [License](https://github.com/Greatigalink/blog_OS/blob/master/LICENSE)
 
 > 如果您对该网站主题有兴趣，可以用于自行建站或其他非商业用途，但请标明来源。感谢！
