@@ -1,0 +1,134 @@
+.time_grid {
+  overflow: hidden;
+  animation: timeGridStart 0.5s;
+  @keyframes timeGridStart {
+    from {
+      opacity: 0;
+      margin-top: -30%;
+    }
+    to {
+      opacity: 1;
+      margin-top: 0;
+    }
+  }
+}
+
+.time_grid_main {
+  display: flex;
+  justify-content: space-around;
+  &_restart {
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    background-color: #ef5350;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-family: "AqumCap";
+    cursor: pointer;
+  }
+}
+
+.time_grid_main_guide {
+  flex: 0.3;
+  ul {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    li {
+      font-size: 13px;
+      color: white;
+      letter-spacing: 1px;
+      margin: 5px;
+      display: flex;
+      align-items: center;
+      aside {
+        border-radius: 50%;
+        margin: 0 2px 0 2px;
+      }
+      span {
+        color: #e65100;
+        font-weight: bold;
+      }
+    }
+  }
+  &_enter {
+    display: flex;
+    width: 100%;
+    justify-self: center;
+    align-items: center;
+    h2 {
+      width: 80%;
+      text-align: center;
+      color: white;
+    }
+  }
+}
+
+.time_grid_main_list {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  &_item {
+    margin: 4px;
+    border-radius: 50%;
+    position: relative;
+    // overflow: hidden;
+    aside {
+      width: 100%;
+      height: 100%;
+      font-size: 3px;
+      border-radius: 50%;
+    }
+    &:hover {
+      aside {
+        display: none;
+      }
+      .time_grid_main_list_item_timePoint {
+        display: block;
+      }
+      cursor: pointer;
+    }
+  }
+}
+
+.time_grid_main_list_item_timePoint {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.3);
+  section {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    animation: rotate 1s linear infinite;
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(180deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .time_grid_main {
+    flex-direction: column;
+  }
+}

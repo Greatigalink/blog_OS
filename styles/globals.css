@@ -9,6 +9,9 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* 悼念专用样式*/
+  /* -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera  */
+  /* filter: grayscale(100%) */
 }
 
 a {
@@ -31,3 +34,39 @@ span[title="text_link"] {
   border-bottom: 1px #757575 solid;
 }
 
+input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: 0;
+}
+
+input::-webkit-input-placeholder {
+  color: #aab2bd;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+button {
+  outline: none;
+  border: 0;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: 1px #bdbdbd solid;
+  border-radius: 0 0 10px 10px;
+}
+
+.global_avatar_href {
+  cursor: pointer;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.global_avatar_href:hover {
+  border-color:#ef5350;
+}

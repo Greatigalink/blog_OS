@@ -1,0 +1,11 @@
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px 20px 5px 20px;
+  article {
+    font-size: 12.5px;
+    letter-spacing: 1px;
+    margin-right: 5px;
+  }
+}

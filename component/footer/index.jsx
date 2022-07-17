@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import { BinaryLable, Icon } from "../export"
 import { dayOrNight, TextLink, Time } from "../../api/export"
 
-const ICP = "<:滇ICP备20002333号|http://beian.miit.gov.cn/:>"
+const ICP = "<:京ICP备XXXXXXXXX号|http://beian.miit.gov.cn/:>"
 
 const callMe = [
   { icon: "qq", href: "" },
@@ -31,7 +31,7 @@ export default function Footer({ clock }) {
         <aside>
           <BinaryLable name={"version"} size={13} content={"3.0.0"} colorLeft={"#ff9800"} colorRight={"#26c6da"} color={"white"} />
         </aside>
-        <p>2020-2021 © Greatiga All Right Reserved</p>
+        <p>2020-2021 © XXX All Right Reserved</p>
         <p>从V1.0.0 诞生至今已经累计运行 {timed}</p>
         <p dangerouslySetInnerHTML={{ __html: TextLink(ICP) }}></p>
       </article>

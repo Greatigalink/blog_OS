@@ -1,0 +1,40 @@
+.home_hotClassify {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: all 0.5s;
+  article {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px 0 5px;
+    color: white;
+    transition: all 0.5s;
+    h3 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+  &:hover {
+    article {
+      background: rgba($color: #212121, $alpha: 0.2);
+    }
+  }
+}
+
+.home_hotClassify_cover {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  article {
+    background: rgba($color: #212121, $alpha: 0.6);
+  }
+}

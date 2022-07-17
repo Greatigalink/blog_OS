@@ -1,8 +1,17 @@
 .your_life {
-  background: url(https://z3.ax1x.com/2021/04/17/c58aB8.jpg);
+  background: url(https://static.greatiga.cn/web_back/function/your_life/time_line.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 .your_life_main {
-  height: 650px;
+  min-height: 720px;
+  padding: 1px;
+  .your_life_develop {
+    margin: 130px 1% 10px 1%;
+    padding: 20px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }

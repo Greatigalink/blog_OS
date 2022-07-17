@@ -9,9 +9,28 @@ const classify = [
       "C语言是编程他爹啊",
     ],
     "class_img|1": [
-      "https://z3.ax1x.com/2021/04/17/c5854J.jpg",
-      "https://z3.ax1x.com/2021/04/17/c58aB8.jpg",
-      "https://z3.ax1x.com/2021/02/18/yWnrtJ.jpg",
+      "https://static.greatiga.cn/article/2021912155317165295/2021912155317165850.jpeg",
+      "https://static.greatiga.cn/article/2021723142144717128/2021723142326585697.jpeg",
+      "https://static.greatiga.cn/article/13002/317202.jpg"
+    ],
+    "art_classify|1": ["TD1", "SD1", "SD2"],
+  },
+];
+
+const homeHotClassify_list = [
+  {
+    "class_name|1": ["前端", "后端", "Java", "Python", "C++"],
+    "class_intro|1": [
+      "前端漂亮啊",
+      "后端强大呀",
+      "Java大哥呀",
+      "python人工智能好帮手呀",
+      "C语言是编程他爹啊",
+    ],
+    "class_img|1": [
+      "https://static.greatiga.cn/classify/TD1/2021723142339153891.jpeg",
+      "https://static.greatiga.cn/article/2021912155317165295/2021912155317165850.jpeg",
+      "https://static.greatiga.cn/article/13002/317202.jpg"
     ],
     "art_classify|1": ["TD1", "SD1", "SD2"],
   },
@@ -51,4 +70,4 @@ const classify_list = [
   },
 ];
 
-export { classify_list, classify };
+export { classify_list, classify, homeHotClassify_list };

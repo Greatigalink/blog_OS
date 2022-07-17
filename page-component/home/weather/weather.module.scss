@@ -1,0 +1,41 @@
+.home_weather {
+  padding: 10px;
+  box-shadow: 3px 5px 5px #bdbdbd;
+}
+
+.home_weather_head {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 10px 0 10px;
+}
+
+.home_weather_main {
+  header {
+    display: flex;
+    justify-content: flex-start;
+    section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 10px;
+    }
+    section:first-child {
+      font-size: 50px;
+      font-weight: bold;
+    }
+    section:last-child {
+      flex-direction: column;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+  footer {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 13px;
+    color: #757575;
+  }
+}

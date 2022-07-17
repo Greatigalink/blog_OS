@@ -1,5 +1,19 @@
 const { md_1, md_2 } = require("./markdown");
 
+/**
+ * 文章模拟数据
+ * @param class_name {String} 文章分类名
+ * @param art_id {String} 文章ID
+ * @param art_title {String} 文章标题
+ * @param art_intro {String} 文章简介
+ * @param art_content {String} 文章正文内容
+ * @param art_user_id {String} 文章发布者ID
+ * @param user_name {String} 文章发布者名称
+ * @param art_classify {String} 文章分类ID
+ * @param art_tag {String} 文章标签
+ * @param art_img {String} 文章配图
+ * @param art_time {String} 文章发布时间
+ */
 const article_detials = 
 [
   {
@@ -17,10 +31,10 @@ const article_detials =
       "HTML;React;Next"
     ],
     "art_img|1": [
-      "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2901834252,3359203708&fm=26&gp=0.jpg",
-      "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2835954585,4104520500&fm=26&gp=0.jpg",
-      "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2912078792,3353946406&fm=26&gp=0.jpg",
-      "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1604079808623&di=20b74ccc62db9a08aad7b3fc31cab6cc&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F2017-12-26%2F5a41ea670152d.jpg%3Fdown"
+      "https://static.greatiga.cn/classify/TD1/2021723142339153891.jpeg",
+      "https://static.greatiga.cn/article/2021912155317165295/2021912155317165850.jpeg",
+      "https://static.greatiga.cn/article/2021723142144717128/2021723142326585697.jpeg",
+      "https://static.greatiga.cn/article/13002/317202.jpg"
     ],
     "art_time|1": '@datetime',
     "art_like|20-100": 30,
